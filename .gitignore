@@ -3,3 +3,6 @@
 ################################################################################
 
 /TcpHolePunching/.vs/TcpHolePunching/v16
+bin/
+obj/
+packages/

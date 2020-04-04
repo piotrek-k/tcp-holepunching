@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 using System.Net;
-using System.Net.Sockets;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using TcpHolePunching;
 using TcpHolePunching.Messages;
 
@@ -21,7 +16,9 @@ namespace Peer
 
         private static int PORT = 53472;
 
-        static void Main(string[] args)
+        static readonly CancellationTokenSource applicationExitTokenSource = new CancellationTokenSource();
+
+        static async Task Main(string[] args)
         {
             Console.Title = "Peer - TCP Hole Punching Proof of Concept";
 
@@ -53,7 +50,7 @@ namespace Peer
             Console.WriteLine(String.Format("Connecting to the Introducer at {0}:{1}...", introducerEndpoint.Address, introducerEndpoint.Port));
             IntroducerSocket.Connect(introducerEndpoint.Address, introducerEndpoint.Port);
 
-            Application.Run();
+            await Task.Delay(Timeout.Infinite, applicationExitTokenSource.Token);
         }
 
         static void Peer_OnConnectionAccepted(object sender, ConnectionAcceptedEventArgs e)

@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Introducer", "Introducer\Introducer.csproj", "{B0C3DD03-FE40-4123-85D4-81E812A052D0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peer", "Peer\Peer.csproj", "{505A5ACD-FACD-4B76-9D9D-C40F3EB33DDD}"
@@ -10,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdealClient", "IdealPeer\IdealClient.csproj", "{CDF17D56-090A-4326-9CC4-57623A56E79A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdealServer", "IdealServer\IdealServer.csproj", "{C71EDA02-7098-479E-9B4E-3DD0A2C83FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroducerDotnetCore", "IntroducerDotnetCore\IntroducerDotnetCore.csproj", "{CD11CE10-385B-4578-A086-23C297E0EF91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpHolePunchingDotnetCore", "TcpHolePunchingDotnetCore\TcpHolePunchingDotnetCore.csproj", "{2C467C81-2955-49AE-8340-257A43B89746}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,8 +77,35 @@ Global
 		{C71EDA02-7098-479E-9B4E-3DD0A2C83FFC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{C71EDA02-7098-479E-9B4E-3DD0A2C83FFC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{C71EDA02-7098-479E-9B4E-3DD0A2C83FFC}.Release|x86.ActiveCfg = Release|Any CPU
+		{CD11CE10-385B-4578-A086-23C297E0EF91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD11CE10-385B-4578-A086-23C297E0EF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD11CE10-385B-4578-A086-23C297E0EF91}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CD11CE10-385B-4578-A086-23C297E0EF91}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CD11CE10-385B-4578-A086-23C297E0EF91}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CD11CE10-385B-4578-A086-23C297E0EF91}.Debug|x86.Build.0 = Debug|Any CPU
+		{CD11CE10-385B-4578-A086-23C297E0EF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD11CE10-385B-4578-A086-23C297E0EF91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD11CE10-385B-4578-A086-23C297E0EF91}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CD11CE10-385B-4578-A086-23C297E0EF91}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CD11CE10-385B-4578-A086-23C297E0EF91}.Release|x86.ActiveCfg = Release|Any CPU
+		{CD11CE10-385B-4578-A086-23C297E0EF91}.Release|x86.Build.0 = Release|Any CPU
+		{2C467C81-2955-49AE-8340-257A43B89746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C467C81-2955-49AE-8340-257A43B89746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C467C81-2955-49AE-8340-257A43B89746}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2C467C81-2955-49AE-8340-257A43B89746}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2C467C81-2955-49AE-8340-257A43B89746}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2C467C81-2955-49AE-8340-257A43B89746}.Debug|x86.Build.0 = Debug|Any CPU
+		{2C467C81-2955-49AE-8340-257A43B89746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C467C81-2955-49AE-8340-257A43B89746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C467C81-2955-49AE-8340-257A43B89746}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2C467C81-2955-49AE-8340-257A43B89746}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2C467C81-2955-49AE-8340-257A43B89746}.Release|x86.ActiveCfg = Release|Any CPU
+		{2C467C81-2955-49AE-8340-257A43B89746}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7F5D254-CA9D-4650-947D-A7A455101138}
 	EndGlobalSection
 EndGlobal
